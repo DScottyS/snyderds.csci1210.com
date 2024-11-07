@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HW 4</title>
+    <meta name="author" content="Scotty Snyder">
+    <meta name="description" content="CSCI 1210 Homework 4">
+    <meta name="keywords" content="CSCI 1210, images, image optimization">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!--  
+           Author:			Scotty Snyder
+           Date:			10/20/24
+           Assignment:		Homework 4
+           Purpose:		    Practice with optimizing images for the web
+      -->
+
+<!-- We haven't talked about a lot of this, yet, so don't worry about it.
+    I tested it all and it works
+-->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            box-sizing: border-box;
+            background: rgba(0, 0, 125, .3);
+        }
+        header {
+            height: 100px;
+            background: rgba(0, 0, 125, .8);
+            width: 100%;
+            margin: auto;
+        }
+        header>h1 {
+            font-size: 2.4em;
+            font-style: italic;
+            position: relative;
+            top: 50%;
+            transform: translate(0%, -50%);
+            width: 800px;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+        p {
+            font-size: 1.3em;
+            width: 800px;
+            margin: 20px auto;
+        }
+        table {
+            width: 700px;
+            margin: 40px auto;
+            padding: 0;
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        tr, td {
+            margin: 0;
+            padding: 0;
+        }
+        table img {
+            display: block;
+            margin: 0;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Homework 3: Photo Editing</h1>
+        </header>
+
+        <table>
+            <tr>
+                <td><img src='images/001.jpg' alt='Entrance to the Philadelphia Chinese Lantern Festival from my trip in July'></td>
+                <td><img src='images/002.jpg' alt='One of the displays at the Chinese Lantern Festival in Philly'></td>
+            </tr>
+            <tr>
+                <td><img src='images/003.jpg' alt='My cat Rosa (right) next to Mrs. Bones (left) '></td>
+                <td><img src='images/004.jpg' alt='My other cat Milo in the bath tub'></td>
+            </tr>
+        </table>
+
+        <p>
+            These are some of the Pictures I've taken this year. The first two are from when I went to the Chinese Lantern Festival in Philadelphia, Pennsylvania during my most recent visit with my brother. The third image is my cat Rosa (pictured on the right) with her new friend Mrs. Bones. The final image is a picture of my other cat, Milo, in the bath tub, because everytime I open my bathroom door he runs in and jumps straight into the tub.
+        </p>
+    </div>
+    <script src="/js/w3c.js"></script>
+</body>
+</html>

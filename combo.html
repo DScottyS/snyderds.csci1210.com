@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            content: "";
+            clear: both;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 800px;
+        }
+        .container > .inner span {
+            color: green;
+            font-style: italic;
+        }
+        .container > .inner span:hover {    
+            transition: .5s;
+            color: blue;
+            cursor: pointer;
+            background: palegoldenrod;
+            padding: 3px;
+            border-radius: 25px;
+            box-shadow: 8px 8px 12px indianred;
+        }
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repudiandae corporis inventore ipsum dolorum, quo nam porro ab praesentium nemo sunt nesciunt illo eos architecto?
+        </p>
+        <div class="inner" id="inner">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eos iste, ipsum quis accusantium non ratione ullam laborum in, fuga cum nihil nemo quaerat explicabo!
+            </p>
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li><span>Four</span></li>
+                <li>Five</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
