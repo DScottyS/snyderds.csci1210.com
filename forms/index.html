@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 500px;
+            margin: 25px auto;
+            border: 1px solid #999;
+            padding: 15px;
+        }
+        [type="text"] {
+            width: 120px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+
+    <div class="container">
+        <form action="process.php" method="GET">
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="firstName" placeholder="First Name" required>
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="lastName" placeholder="Last Name">
+
+            <fieldset>
+                <legend>Class</legend>
+                <input type="radio" name="class" id="fr" value="Freshman">
+                <label for="fr">Freshman</label><br>
+                <input type="radio" name="class" id="so" value="Sophomore">
+                <label for="so">Sophomore</label><br>
+                <input type="radio" name="class" id="jr" value="Junior">
+                <label for="jr">Junior</label><br>
+                <input type="radio" name="class" id="sr" value="Senior">
+                <label for="sr">Senior</label><br>
+                <input type="radio" name="class" id="or" value="Other">
+                <label for="or">Other</label><br>
+            </fieldset>
+
+            <select name="major" id="major">
+                <option value="Computing">CSCI</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Digital Media">Digital Media</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Business Managment">Business Managment</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Other" selected>Other</option>
+            </select><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </div>
+</body>
+</html>
